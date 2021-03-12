@@ -38,6 +38,7 @@ class App extends React.Component<AppProps> {
   }
   render() {
     const { auth = { data: {} } } = this.props;
+    console.log(this.props)
     const { menu } = auth.data || { menu: [] };
     return (
       <div className="App">
